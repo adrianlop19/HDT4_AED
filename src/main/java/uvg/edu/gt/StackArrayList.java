@@ -3,11 +3,11 @@ package uvg.edu.gt;
 import java.util.ArrayList;
 import java.util.EmptyStackException;
 
-public class StackArrayList<T> implements UVGStack<T>{
+public class StackArrayList<T> implements UVGStack<T> {
     ArrayList<T> arrayList;
 
-    public StackArrayList(){
-        arrayList = new ArrayList<T>();
+    public StackArrayList() {
+        arrayList = new ArrayList<>();
     }
 
     @Override
@@ -24,16 +24,15 @@ public class StackArrayList<T> implements UVGStack<T>{
 
     @Override
     public T peek() {
-        if (arrayList.isEmpty()){
+        if (arrayList.isEmpty()) {
             throw new EmptyStackException();
         }
         return arrayList.get(arrayList.size() - 1);
     }
+
     @Override
     public boolean isEmpty() {
         return arrayList.isEmpty();
     }
-    public ArrayList<T> getList(){
-        return arrayList;
-    }
+
 }

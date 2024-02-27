@@ -8,7 +8,4 @@ public interface UVGStack <T>{
     public T pop();
     public T peek();
     public boolean isEmpty();
-
-    public ArrayList<T> getList();
-
 }

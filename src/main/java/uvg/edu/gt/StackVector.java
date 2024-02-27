@@ -29,8 +29,4 @@ public class StackVector<T> implements UVGStack<T>{
         return vector.isEmpty();
     }
 
-    @Override
-    public ArrayList<T> getList() {
-        return null;
-    }
 }
